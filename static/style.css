@@ -1,0 +1,91 @@
+/* Warna dasar lembut kebiruan */
+body {
+    background-color: #e6f0fa; /* Biru pastel muda */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2f4f4f;
+}
+
+/* Judul */
+h1 {
+    color: #1f3b57; /* Biru lebih gelap */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Putih bersih untuk kontras */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Elemen Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input dan Select */
+input[type="text"],
+input[type="file"],
+select {
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5faff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+select:focus {
+    outline: none;
+    border-color: #5b9bd5;
+    box-shadow: 0 0 5px rgba(91, 155, 213, 0.5);
+}
+
+/* Tombol */
+button {
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #417ab3;
+}
+
+/* Loading dan alert */
+#loading .alert,
+.alert {
+    background-color: #d9edf7;
+    color: #31708f;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
