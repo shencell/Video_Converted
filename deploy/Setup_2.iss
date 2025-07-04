@@ -36,7 +36,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 ; Remove the following line to run in administrative install mode (install for all users).
 PrivilegesRequired=lowest
-OutputDir=D:\Project\Setup
+OutputDir=D:\Project\deploy
 OutputBaseFilename=mysetup_2
 SolidCompression=yes
 WizardStyle=modern
@@ -48,13 +48,13 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\Project\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Project\run_wsgi.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Project\converted\*"; DestDir: "{app}\converted"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Project\static\*"; DestDir: "{app}\static"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Project\templates\*"; DestDir: "{app}\templates"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Project\uploads\*"; DestDir: "{app}\uploads"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Project\backend\*"; DestDir: "{app}\backend"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Project\dev\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Project\dev\run_wsgi.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Project\dev\converted\*"; DestDir: "{app}\converted"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Project\dev\static\*"; DestDir: "{app}\static"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Project\dev\templates\*"; DestDir: "{app}\templates"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Project\dev\uploads\*"; DestDir: "{app}\uploads"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Project\dev\backend\*"; DestDir: "{app}\backend"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
