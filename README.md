@@ -61,10 +61,11 @@ Atau clone langsung dari repo:
 
 ```bash
 git clone https://github.com/shencell/Video-Converted.git
+```
 
-🎞️ Video Sample
+### 🎞️ Video Sample
 Kamu dapat menggunakan contoh video berikut untuk menguji aplikasi:
 
-📁 [Download Video Sample ini](https://drive.google.com/drive/folders/1dEWYXtUUKrl989C7i0GVaIHXZBOsdvav?usp=sharing).
+📁 [`Download Video Sample`](https://drive.google.com/drive/folders/1dEWYXtUUKrl989C7i0GVaIHXZBOsdvav?usp=sharing)
 
 
